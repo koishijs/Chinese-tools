@@ -1,0 +1,25 @@
+{
+  "name": "koishi-plugin-ping",
+  "version": "1.0.0",
+  "description": "Ping-Pong Plugin for Koishi",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.2.2"
+  },
+  "devDependencies": {
+    "@koishijs/plugin-database-memory": "^1.0.2",
+    "@koishijs/plugin-mock": "^1.0.2",
+    "c8": "^7.11.0",
+    "mocha": "^9.1.4"
+  }
+}
