@@ -1,25 +1,34 @@
 {
-  "name": "koishi-plugin-ping",
-  "version": "1.0.0",
-  "description": "Ping-Pong Plugin for Koishi",
+  "name": "koishi-plugin-chinese-tools",
+  "description": "一个汉语工具服务，具备繁简转换和盘古排版功能",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib"
   ],
+  "scripts": {
+    "build": "atsc -b",
+    "test": "mocha --exit -r esbuild-register -r yml-register tests/*.spec.ts"
+  },
   "license": "MIT",
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "pangu"
   ],
   "peerDependencies": {
-    "koishi": "^4.2.2"
+    "koishi": "^4.11.9"
   },
   "devDependencies": {
-    "@koishijs/plugin-database-memory": "^1.0.2",
-    "@koishijs/plugin-mock": "^1.0.2",
+    "@koishijs/plugin-database-memory": "^2.3.0",
+    "@koishijs/plugin-mock": "^2.4.1",
     "c8": "^7.11.0",
-    "mocha": "^9.1.4"
+    "mocha": "^10.2.0",
+    "opencc": "^1.1.3"
+  },
+  "dependencies": {
+    "opencc": "^1.1.3"
   }
 }
