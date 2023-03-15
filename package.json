@@ -26,7 +26,8 @@
     "@koishijs/plugin-mock": "^2.4.1",
     "c8": "^7.11.0",
     "mocha": "^10.2.0",
-    "opencc": "^1.1.3"
+    "atsc": "^1.2.2",
+    "esbuild-register": "^3.4.2"
   },
   "dependencies": {
     "opencc": "^1.1.3"
