@@ -22,10 +22,12 @@
     "koishi": "^4.11.9"
   },
   "devDependencies": {
+    "koishi": "^4.11.9",
     "@koishijs/plugin-database-memory": "^2.3.0",
     "@koishijs/plugin-mock": "^2.4.1",
     "atsc": "^1.2.2",
     "c8": "^7.11.0",
+    "esbuild": "^0.17.11",
     "esbuild-register": "^3.4.2",
     "mocha": "^10.2.0",
     "typescript": "^4.9.5"
