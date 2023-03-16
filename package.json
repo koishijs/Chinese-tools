@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "atsc -b",
-    "test": "mocha --exit -r esbuild-register -r yml-register tests/*.spec.ts"
+    "test": "mocha --exit -r esbuild-register -r yml-register tests/*.spec.ts",
+    "test:json": "shx rm -rf coverage && c8 -r json yarn test"
   },
   "license": "MIT",
   "keywords": [
@@ -30,6 +31,7 @@
     "esbuild-register": "^3.4.2",
     "koishi": "^4.11.9",
     "mocha": "^10.2.0",
+    "shx": "^0.3.4",
     "typescript": "^4.9.5",
     "yml-register": "^1.1.0"
   },
